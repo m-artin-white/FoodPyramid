@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+} 
+         
+#heading{
+    color: green;
+    font-size: 20px;
+    line-height: 0;
+    text-align: center;
+}
+
+#subHeading{
+    color: black;
+    font-size: 20px;
+    line-height: 2;
+    text-align: center;
+}
+
+#date{
+    color:black;
+    font-size: 15px;
+ }
+
+.tri1{
+    margin: 0 auto;
+    text-align: center;
+    width: 0;
+	  height: 0;
+	  border-left: 120px solid transparent;
+	  border-right: 120px solid transparent;
+	  border-bottom: 130px solid red;
+ }
+
+.sep{
+    width:2000px;
+    height: 10px;
+    background-color: white;
+ }
+
+.tri2{
+    margin: 0 auto;
+    border-bottom: 75px solid orange;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    height: 0;
+    width: 250px;
+ }
+
+  .sep2{
+    width:2000px;
+    height: 10px;
+    background-color: white;
+ }
+
+  .tri3{
+    margin: 0 auto;
+    border-bottom: 85px solid yellow;
+    border-left: 65px solid transparent;
+    border-right: 65px solid transparent;
+    height: 0;
+    width: 380px;
+ } 
+
+  .tri4{
+    margin: 0 auto;
+    border-bottom: 95px solid blue;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    height: 0;
+    width: 510px;
+  }
+
+  .tri5{
+    margin: 0 auto;
+    border-bottom: 105px solid brown;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    height: 0;
+    width: 650px;
+  }
+
+  .tri6{
+    margin: 0 auto;
+    border-bottom: 115px solid green;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    height: 0;
+    width: 800px;
+  }
+
+#submit
+{
+  text-align:center;
+}
+
+.box{
+  width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.box .button{
+  display: none;   
+}
+
+
+.tri1:hover .button
+{
+    display: inline-block;
+    position: relative;
+    left:-160px;
+    bottom: -75px;
+    width: 37px;
+    height: 37px;
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.tri2:hover .button
+{
+    display: inline-block;
+    position: relative;
+    left: -35px;
+    bottom: -25px;
+    width: 37px;
+    height: 37px;
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.tri3:hover .button
+{
+    display: inline-block;
+    position: relative;
+    left:30px;
+    bottom: -30px;
+    width: 37px;
+    height: 37px;
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.tri4:hover .button
+{
+    display: inline-block;
+    position: relative;
+    left:95px;
+    bottom: -40px;
+    width: 37px;
+    height: 37px;
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.tri5:hover .button
+{
+    display: inline-block;
+    position: relative;
+    left:165px;
+    bottom: -45px;
+    width: 37px;
+    height: 37px;
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.tri6:hover .button
+{
+    display: inline-block;
+    position: relative;
+    left: 240px;
+    bottom: -55px;
+    width: 37px;
+    height: 37px;
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.box .button:active{
+  background-color: #ccc;
+}
+
+.box input {
+  width: 60px;
+  padding:5px 10px;
+  border: 1px solid #c6c6c6;
+  border-radius: 5px;
+  font-size: 22px;
+  margin: 0 10px;
+}
+
+.box input[id = "1"]{
+  position: relative;
+  left:-160px;
+  bottom: -75px;
+}
+
+.box input[id = "2"]{
+  position: relative;
+  left: -35px;
+  bottom: -25px;
+}
+
+.box input[id = "3"]{
+  position: relative;
+  left: 30px;
+  bottom: -30px;
+}
+
+.box input[id = "4"]{
+  position: relative;
+  left: 95px;
+  bottom: -40px;
+}
+
+.box input[id = "5"]{
+  position: relative;
+  left: 165px;
+  bottom: -45px;
+}
+
+.box input[id = "6"]{
+  position: relative;
+  left: 240px;
+  bottom: -55px;
+}
+
+#hold{
+  font-size: 20px;
+  background-color: #c6c6c6;
+  margin:10px;
+  border: black;
+  border-radius: 1px solid black;
+  align-items: center;
+  box-shadow: -10px 10px;
+}
+
+#output{
+  font-size: 20px;
+  align-items: center;
+  background-color: black;
+  color: #c6c6c6;
+  
+}
+
+
+
+
+
+
+

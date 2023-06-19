@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Food Pyramid</title>
+        <link rel="stylesheet" href="assignment-01.css">
+    </head>
+    
+    <body>
+        <div id= "heading">
+            <h1>Interactive Food Pyramid</h1>
+        </div>
+        <div id = "subHeading">
+            <p1> Interact with the buttons below!</p1>
+        </div>
+        <br>
+        <div id = "date">
+            <label for="date">Please enter today's date:</label>
+            <input type="date" id="birthday" name="birthday">
+       </div>
+       <br><br><br>
+
+       <div class = tr>
+            <div class ="tri1">
+                <div class ="box">
+                    <label for="name"></label>
+                    <div class="dec button">-</div>
+                    <input type ="text" name="qty" id="1" value="0" class="input-filed">
+                    <div class = "inc button">+</div>
+                </div>
+            </div>
+            <div class = "sep"></div>
+            <div class ="tri2">
+                <div class ="box">
+                    <label for="name"></label>
+                    <div class="dec button">-</div>
+                    <input type ="text" name="qty" id="2" value="0" class="input-filed">
+                    <div class = "inc button">+</div>
+                </div>
+            </div>
+            <div class = "sep2"></div>
+            <div class ="tri3">
+                <div class ="box">
+                    <label for="name"></label>
+                    <div class="dec button">-</div>
+                    <input type ="text" name="qty" id="3" value="0" class="input-filed">
+                    <div class = "inc button">+</div>
+                </div>
+            </div>
+            <div class ="tri4"><div class ="box">
+                <label for="name"></label>
+                <div class="dec button">-</div>
+                <input type ="text" name="qty" id="4" value="0" class="input-filed">
+                <div class = "inc button">+</div>
+            </div></div>
+            <div class ="tri5">
+                <div class ="box">
+                    <label for="name"></label>
+                    <div class="dec button">-</div>
+                    <input type ="text" name="qty" id="5" value="0" class="input-filed">
+                    <div class = "inc button">+</div>
+                </div>
+            </div>
+            <div class ="tri6">
+                <div class ="box">
+                    <label for="name"></label>
+                    <div class="dec button">-</div>
+                            <input type ="text" name="qty" id="6" value="0" class="input-filed" position: relative top: 100px; >
+                    <div class = "inc button">+</div>
+                </div>
+            </div>
+        </div>
+        <br>
+       <div id = "submit">
+       <input type="submit" value ="Submit" onclick=printInput()>
+       </div>
+       <br>
+       <p id="hold">Amount of food eaten in each category for the:</p>
+       <p id="output"></p>
+
+
+       
+
+        <script>
+             var incrementButton = document.getElementsByClassName('inc');
+        var decrementButton = document.getElementsByClassName('dec');
+        console.log(incrementButton);
+        console.log(decrementButton);
+
+        for(var i =0; i<incrementButton.length; i++)
+        {
+            var button = incrementButton[i];
+            button.addEventListener('click', function(event){
+                var buttonClicked = event.target;
+
+                var input = buttonClicked.parentElement.children[2];
+                
+                var inputValue = input.value;
+
+                var newValue = parseInt(inputValue)+1;
+                input.value = newValue;
+            });
+        }
+
+            for(var i =0; i<decrementButton.length; i++)
+        {
+            var button = decrementButton[i];
+            button.addEventListener('click', function(event){
+                var buttonClicked = event.target;
+
+                var input = buttonClicked.parentElement.children[2];
+                
+                var inputValue = input.value;
+
+                var newValue = parseInt(inputValue)-1;
+                
+                if(newValue>=0)
+                {
+                    input.value = newValue;
+                }
+
+                else{
+                    input.value =0;
+                }
+            });
+        }
+
+        const input = document.getElementById('birthday');
+        const output = document.getElementById('output');
+
+        function printInput(){
+        output.innerHTML = input.value;
+        }
+
+input.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("button").click();
+  }
+});
+        </script>
+
+    </body>
+</html>
